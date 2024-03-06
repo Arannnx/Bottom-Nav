@@ -25,7 +25,7 @@
                 android:id="@+id/imageview"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/profile" />
+                android:src="@drawable/menu" />
             
             <TextView
                 android:id="@+id/textview"

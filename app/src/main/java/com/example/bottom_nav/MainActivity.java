@@ -29,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        // Makes HomeFragment the main layout
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        HomeFragment homeFragment = new HomeFragment();
+        fragmentTransaction.replace(R.id.frame_out, homeFragment);
+        fragmentTransaction.commit();
+
         final DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
         findViewById(R.id.imageview).setOnClickListener(new View.OnClickListener() {
             @Override

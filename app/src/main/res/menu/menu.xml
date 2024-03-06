@@ -4,13 +4,13 @@
     <item
         android:id="@+id/home"
         android:icon="@drawable/home"
-        android:title="Item" />
+        android:title="Home" />
     <item
         android:id="@+id/profile"
         android:icon="@drawable/profile"
-        android:title="Item" />
+        android:title="Profile" />
     <item
         android:id="@+id/settings"
         android:icon="@drawable/settings"
-        android:title="Item" />
+        android:title="Settings" />
 </menu>
