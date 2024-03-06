@@ -13,8 +13,41 @@
         android:theme="@style/Theme.Bottom_nav"
         tools:targetApi="31">
         <activity
+            android:name=".Telegram"
+            android:exported="false" />
+        <activity
+            android:name=".Messenger"
+            android:exported="false" />
+        <activity
+            android:name=".LinkedIn"
+            android:exported="false" />
+        <activity
+            android:name=".Kiwi"
+            android:exported="false" />
+        <activity
+            android:name=".Instagram"
+            android:exported="false" />
+        <activity
+            android:name=".GoogleMap"
+            android:exported="false" />
+        <activity
+            android:name=".Discord"
+            android:exported="false" />
+        <activity
+            android:name=".ButtonIntent"
+            android:exported="false" />
+        <activity
+            android:name=".Binance"
+            android:exported="false" />
+        <activity
+            android:name=".X"
+            android:exported="false" />
+        <activity
+            android:name=".Facebook"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:exported="true"/>
+            android:exported="false" />
         <activity
             android:name=".SplashScreen"
             android:exported="true"
