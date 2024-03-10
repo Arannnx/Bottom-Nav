@@ -67,30 +67,35 @@ public class HomeFragment extends Fragment {
         CardView googlemap = view.findViewById(R.id.map);
         googlemap.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {openGoogleMap();
+            public void onClick(View v) {
+                openGoogleMap();
             }
         });
 
         CardView facebook = view.findViewById(R.id.facebook);
         facebook.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {openFacebook();
+            public void onClick(View v) {
+                openFacebook();
             }
         });
 
         CardView food = view.findViewById(R.id.food);
         food.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {openFood();
+            public void onClick(View v) {
+                openFood();
             }
         });
 
         CardView games = view.findViewById(R.id.games);
         games.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {openGames();
+            public void onClick(View v) {
+                openGames();
             }
         });
+
 
         return view;
     }
@@ -114,7 +119,5 @@ public class HomeFragment extends Fragment {
         Intent intent = new Intent(getActivity(), Games.class);
         startActivity(intent);
     }
-
-
 
 }

@@ -4,21 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Food">
+
+    <LinearLayout
+        android:id="@+id/layoutToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/foodie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Back"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:layout_gravity="center"
+        android:src="@drawable/sitaw"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolbar" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adobong Sitaw"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Adobong Sitaw is a Filipino dish featuring string beans (sitaw) cooked in a savory soy sauce and vinegar-based Adobo sauce. The dish showcases the classic Filipino flavors of garlic, spices, and a touch of tanginess, making it a delicious and popular vegetable option in Filipino cuisine, often served as a side or a main course."
+        android:textSize="18sp"
         android:gravity="center"
-        android:layout_marginTop="316dp"
-        android:layout_marginEnd="16dp"
-        android:text="Food"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:textAlignment="center"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

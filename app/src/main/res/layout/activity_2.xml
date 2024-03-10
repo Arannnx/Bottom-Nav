@@ -8,11 +8,11 @@
     tools:context=".Activity2">
 
     <TextView
-        android:id="@+id/textview"
+        android:id="@+id/button"
         android:layout_width="163dp"
         android:layout_height="50dp"
         android:layout_marginTop="316dp"
-        android:text="Activity 2"
+        android:text="Button"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
