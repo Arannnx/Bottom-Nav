@@ -1,7 +1,9 @@
 package com.example.bottom_nav;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
@@ -58,7 +60,61 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false);
+        // Inflate the layout for this fragmen
+
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+
+        CardView googlemap = view.findViewById(R.id.map);
+        googlemap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openGoogleMap();
+            }
+        });
+
+        CardView facebook = view.findViewById(R.id.facebook);
+        facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openFacebook();
+            }
+        });
+
+        CardView food = view.findViewById(R.id.food);
+        food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openFood();
+            }
+        });
+
+        CardView games = view.findViewById(R.id.games);
+        games.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {openGames();
+            }
+        });
+
+        return view;
     }
+
+    public void openGoogleMap() {
+        Intent intent = new Intent(getActivity(), GoogleMap.class);
+        startActivity(intent);
+    }
+
+    public void openFacebook() {
+        Intent intent = new Intent(getActivity(), Facebook.class);
+        startActivity(intent);
+    }
+
+    public void openFood() {
+        Intent intent = new Intent(getActivity(), Food.class);
+        startActivity(intent);
+    }
+
+    public void openGames() {
+        Intent intent = new Intent(getActivity(), Games.class);
+        startActivity(intent);
+    }
+
+
+
 }

@@ -86,7 +86,7 @@
                     android:columnOrderPreserved="false">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/map"
+                        android:id="@+id/discord"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_rowWeight="1"
@@ -99,13 +99,14 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="140dp"
+                            android:background="#12FFFFFF"
                             android:orientation="horizontal">
 
                             <ImageView
                                 android:layout_width="200dp"
                                 android:layout_height="130dp"
                                 android:layout_gravity="bottom"
-                                android:src="@drawable/map" />
+                                android:src="@drawable/discord" />
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -118,7 +119,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
                                     android:gravity="center"
-                                    android:text="Google Map"
+                                    android:text="Discord"
                                     android:textColor="@color/black"
                                     android:textSize="28sp"
                                     android:textStyle="bold" />
@@ -172,11 +173,9 @@
 
                         </LinearLayout>
 
-
                     </androidx.cardview.widget.CardView>
-
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/X"
+                        android:id="@+id/food"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_rowWeight="1"
@@ -195,7 +194,7 @@
                                 android:layout_width="200dp"
                                 android:layout_height="130dp"
                                 android:layout_gravity="bottom"
-                                android:src="@drawable/x" />
+                                android:src="@drawable/food" />
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -208,7 +207,51 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginTop="10dp"
                                     android:gravity="center"
-                                    android:text="Twitter"
+                                    android:text="Food"
+                                    android:textColor="@color/black"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/games"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="130dp"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/games" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"
+                                    android:text="Games"
                                     android:textColor="@color/black"
                                     android:textSize="28sp"
                                     android:textStyle="bold" />
@@ -221,7 +264,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/instagram"
+                        android:id="@+id/map"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_rowWeight="1"
@@ -230,6 +273,50 @@
                         android:layout_margin="12dp"
                         app:cardCornerRadius="4dp"
                         app:cardElevation="16dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="200dp"
+                                android:layout_height="130dp"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/map" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center"
+                                    android:text="Google Map"
+                                    android:textColor="@color/black"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/instagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_rowWeight="1"
+                        android:layout_columnSpan="2"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="12dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="16dp"/>
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -263,233 +350,6 @@
                         </LinearLayout>
 
 
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/telegram"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="12dp"
-                        app:cardCornerRadius="4dp"
-                        app:cardElevation="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="140dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="200dp"
-                                android:layout_height="130dp"
-                                android:layout_gravity="bottom"
-                                android:src="@drawable/telegram" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="10dp"
-                                    android:gravity="center"
-                                    android:text="Telegram"
-                                    android:textColor="@color/black"
-                                    android:textSize="28sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/messenger"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="12dp"
-                        app:cardCornerRadius="4dp"
-                        app:cardElevation="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="140dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="200dp"
-                                android:layout_height="130dp"
-                                android:layout_gravity="bottom"
-                                android:src="@drawable/messenger" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="10dp"
-                                    android:gravity="center"
-                                    android:text="Messenger"
-                                    android:textColor="@color/black"
-                                    android:textSize="28sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/linkedin"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="12dp"
-                        app:cardCornerRadius="4dp"
-                        app:cardElevation="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="140dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="200dp"
-                                android:layout_height="130dp"
-                                android:layout_gravity="bottom"
-                                android:src="@drawable/linkedin" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="10dp"
-                                    android:gravity="center"
-                                    android:text="LinkedIn"
-                                    android:textColor="@color/black"
-                                    android:textSize="28sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/discord"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="12dp"
-                        app:cardCornerRadius="4dp"
-                        app:cardElevation="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="140dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="200dp"
-                                android:layout_height="130dp"
-                                android:layout_gravity="bottom"
-                                android:src="@drawable/discord" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="10dp"
-                                    android:gravity="center"
-                                    android:text="Discord"
-                                    android:textColor="@color/black"
-                                    android:textSize="28sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:id="@+id/kiwi"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_rowWeight="1"
-                        android:layout_columnSpan="2"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="12dp"
-                        app:cardCornerRadius="4dp"
-                        app:cardElevation="16dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="140dp"
-                            android:orientation="horizontal">
-
-                            <ImageView
-                                android:layout_width="200dp"
-                                android:layout_height="130dp"
-                                android:layout_gravity="bottom"
-                                android:src="@drawable/kiwi" />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center_vertical"
-                                android:orientation="vertical">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginTop="10dp"
-                                    android:gravity="center"
-                                    android:text="Kiwi"
-                                    android:textColor="@color/black"
-                                    android:textSize="28sp"
-                                    android:textStyle="bold" />
-                            </LinearLayout>
-
-
-                        </LinearLayout>
-
-
-                    </androidx.cardview.widget.CardView>
-
                 </GridLayout>
 
                 <Button
@@ -501,6 +361,5 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-
 
 </FrameLayout>
