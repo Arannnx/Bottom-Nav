@@ -96,9 +96,22 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        CardView discord = view.findViewById(R.id.discord);
+        discord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openDiscord();
+            }
+        });
 
         return view;
     }
+
+    public void openDiscord() {
+        Intent intent = new Intent(getActivity(), Discord.class);
+        startActivity(intent);
+    }
+
 
     public void openGoogleMap() {
         Intent intent = new Intent(getActivity(), GoogleMap.class);

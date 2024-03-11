@@ -20,9 +20,9 @@ public class Activity2 extends AppCompatActivity {
         // Your existing code...
 
         // Assuming "button" is the TextView you want to act as a back button
-        TextView backButton = findViewById(R.id.button);
+        TextView button = findViewById(R.id.button);
 
-        backButton.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onBackPressed();

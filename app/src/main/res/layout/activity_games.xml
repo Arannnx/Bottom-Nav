@@ -26,7 +26,7 @@
             android:backgroundTint="@color/white"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:text="Back"/>
+            android:text="Back" />
 
     </LinearLayout>
 
@@ -60,5 +60,7 @@
         android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/textView"
         android:textAlignment="center"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
