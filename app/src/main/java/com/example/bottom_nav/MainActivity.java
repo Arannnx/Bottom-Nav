@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         // Set up side navigation
         NavigationView navigationView = findViewById(R.id.navigation_view);
         navigationView.setItemIconTintList(null); // If you have custom icons
+
         NavController navController = Navigation.findNavController(this, R.id.navHostFragment);
         NavigationUI.setupWithNavController(navigationView, navController);
 
