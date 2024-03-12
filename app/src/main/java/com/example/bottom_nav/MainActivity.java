@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         navigationView.setNavigationItemSelectedListener(item -> {
             if (item.getItemId() == R.id.nav_home) {
-                repFragment(new SideHomeFragment());
+                repFragment(new HomeFragment());
             } else if (item.getItemId() == R.id.nav_profile) {
                 repFragment(new SideProfileFragment());
             } else if (item.getItemId() == R.id.nav_message) {
