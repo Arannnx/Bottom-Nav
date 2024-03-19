@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#EDE7E7"
     tools:context=".HomeFragment">
 
     <ScrollView
@@ -14,8 +15,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@drawable/bg">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/firstlinear"
@@ -71,17 +71,17 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/grid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:id="@+id/grid">
+                android:orientation="vertical">
 
 
                 <GridLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="811dp"
                     android:alignmentMode="alignMargins"
-                    android:background="@drawable/bg"
+                    android:background="@drawable/black"
                     android:columnCount="2"
                     android:columnOrderPreserved="false">
 
@@ -89,17 +89,17 @@
                         android:id="@+id/discord"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_rowWeight="1"
                         android:layout_columnSpan="2"
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
+                        android:background="@drawable/black"
                         app:cardCornerRadius="4dp"
                         app:cardElevation="16dp">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="140dp"
-                            android:background="#12FFFFFF"
+                            android:background="@drawable/black"
                             android:orientation="horizontal">
 
                             <ImageView
@@ -120,7 +120,7 @@
                                     android:layout_marginTop="10dp"
                                     android:gravity="center"
                                     android:text="Discord"
-                                    android:textColor="@color/black"
+                                    android:textColor="@color/white"
                                     android:textSize="28sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -135,7 +135,6 @@
                         android:id="@+id/facebook"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_rowWeight="1"
                         android:layout_columnSpan="2"
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
@@ -145,6 +144,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="140dp"
+                            android:background="@drawable/black"
                             android:orientation="horizontal">
 
                             <ImageView
@@ -165,7 +165,7 @@
                                     android:layout_marginTop="10dp"
                                     android:gravity="center"
                                     android:text="Facebook"
-                                    android:textColor="@color/black"
+                                    android:textColor="@color/white"
                                     android:textSize="28sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -174,11 +174,11 @@
                         </LinearLayout>
 
                     </androidx.cardview.widget.CardView>
+
                     <androidx.cardview.widget.CardView
                         android:id="@+id/food"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_rowWeight="1"
                         android:layout_columnSpan="2"
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
@@ -188,6 +188,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="140dp"
+                            android:background="@drawable/black"
                             android:orientation="horizontal">
 
                             <ImageView
@@ -205,10 +206,11 @@
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_margin="30dp"
                                     android:layout_marginTop="10dp"
                                     android:gravity="center"
                                     android:text="Food"
-                                    android:textColor="@color/black"
+                                    android:textColor="@color/white"
                                     android:textSize="28sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -218,11 +220,11 @@
 
 
                     </androidx.cardview.widget.CardView>
+
                     <androidx.cardview.widget.CardView
                         android:id="@+id/games"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_rowWeight="1"
                         android:layout_columnSpan="2"
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
@@ -232,6 +234,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="140dp"
+                            android:background="@drawable/black"
                             android:orientation="horizontal">
 
                             <ImageView
@@ -252,7 +255,7 @@
                                     android:layout_marginTop="10dp"
                                     android:gravity="center"
                                     android:text="Games"
-                                    android:textColor="@color/black"
+                                    android:textColor="@color/white"
                                     android:textSize="28sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -267,7 +270,6 @@
                         android:id="@+id/map"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_rowWeight="1"
                         android:layout_columnSpan="2"
                         android:layout_columnWeight="1"
                         android:layout_margin="12dp"
@@ -277,6 +279,7 @@
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="140dp"
+                            android:background="@drawable/black"
                             android:orientation="horizontal">
 
                             <ImageView
@@ -297,7 +300,7 @@
                                     android:layout_marginTop="10dp"
                                     android:gravity="center"
                                     android:text="Google Map"
-                                    android:textColor="@color/black"
+                                    android:textColor="@color/white"
                                     android:textSize="28sp"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -314,7 +317,7 @@
                     android:id="@+id/button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Next"/>
+                    android:text="Next" />
 
             </LinearLayout>
         </LinearLayout>
